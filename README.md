@@ -14,6 +14,14 @@ You just have to use the STOCK() function just like you use the native functions
 
 	=STOCK("MXRF11", "c")
 
+### Parameters
+The *first parameter* is the stock to be requested. Simple like that. But bare in mind that the function will append the ".SA" suffix to South American stock exchanges. If you want to request any other type of stocks, just change or remove the suffix on the function.
+The *second parameter* is always one letter, being:
+- *o*: Open price of the day
+- *h*: High price of the day
+- *l*: Low price of the day
+- *c*: Current price
+- *pc*: Previous close price
 
 ## About the API
 FibbHub is a free service which provides an JSON API with "real-time stock info, institutional-grade fundamental and alternative data to supercharge your investment for FREE". To create an account, go to https://finnhub.io/.
