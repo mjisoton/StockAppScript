@@ -12,7 +12,7 @@ It is pretty straightforward:
 ## Examples
 You just have to use the STOCK() function just like you use the native functions. For example:
 
-	=STOCK("MXRF11", "c")
+	=STOCK("MXRF11"; "c")
 
 ### Parameters
 The *first parameter* is the stock to be requested. Simple like that. But bare in mind that the function will append the ".SA" suffix to South American stock exchanges. If you want to request any other type of stocks, just change or remove the suffix on the function.
