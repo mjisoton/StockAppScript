@@ -19,6 +19,9 @@ function STOCK(ticker, type) {
     //API Endpoint
     var url = "https://finnhub.io/api/v1/quote?symbol=" + ticker.toUpperCase() + ".SA&token=" + token;
 
+	  //Avoids HTTP 429 (Too many requests)
+		Utilities.sleep(parseInt(Math.random() * 10000));
+
     //Fetch the remote resource
     var json = UrlFetchApp.fetch(url);
 
